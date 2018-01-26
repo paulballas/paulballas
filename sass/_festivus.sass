@@ -1,0 +1,129 @@
+// default
+.emailme
+  display: none
+.ccd2e7
+  background: #ccd2e7
+a
+  &.no-under
+    text-decoration: none
+  &.observable
+    border-bottom: 2px solid $a-pop
+    &:hover
+      padding: 2px
+      margin: -2px
+      border-bottom: none
+      background-color: $a-pop
+      color: $white
+  &:hover
+    cursor: pointer
+.relative
+  position: relative
+
+.pad-container
+  padding-top: ms(6)
+  padding-bottom: ms(6)
+.pad-container-lg
+  padding-top: ms(8)
+  padding-bottom: ms(8)
+
+.pad-container-xs
+  padding-top: ms(4)
+  padding-bottom: ms(4)
+
+.m-b-0
+  margin-bottom: 0 !important
+.m-b-1
+  margin-bottom: ms(1)
+.m-b-2
+  margin-bottom: ms(2)
+
+
+.m-b-1-xs
+  margin-bottom: ms(1)
+  +target(md)
+    margin-bottom: 0
+.m-b-2-xs
+  margin-bottom: ms(2)
+  +target(md)
+    margin-bottom: 0
+.m-b-3-xs
+  margin-bottom: ms(3)
+  +target(md)
+    margin-bottom: 0
+
+.m-t-0
+  margin-top: 0 !important
+.m-t-1
+  margin-top: ms(1)
+.m-t-2
+  margin-top: ms(2)
+
+.m-t-1-xs
+  margin-top: ms(1)
+  +target(md)
+    margin-top: 0
+.m-t-2-xs
+  margin-top: ms(2)
+  +target(md)
+    margin-top: 0
+
+.p-r-xs
+  padding-right: 0
+  +target(md)
+    padding-right: ms(5)
+
+.p-l-xs
+  padding-left: 0
+  +target(md)
+    padding-left: ms(5)
+
+.phone-video
+  position: relative
+  display: none
+  +target(md)
+    display: block
+  video
+    position: absolute
+    top: 12.1%
+    left: 6.5%
+    z-index: 1000
+    width: 87%
+    height: auto
+.phone-static
+  display: block
+  max-width: ms(13)
+  margin: 0 auto
+  +target(md)
+    display: none
+
+// img
+img
+  display: block
+  height: auto
+  &.full
+    width: 100%
+  &.img-pop
+    border: 2px solid $mid-gray
+    box-shadow: 2px 2px 20px rgba($primary, 0.1)
+
+svg
+  &.mw-2
+    max-width: ms(2)
+    height: auto
+// backgrounds
+.a-pop-bg
+  background: $a-pop
+.b-pop-bg
+  background: $b-pop
+.c-pop-bg
+  background: $c-pop
+.d-pop-bg
+  background: $d-pop
+.e-pop-bg
+  background: $e-pop
+.light-gray-bg
+  background: $light-gray
+.mid-gray-bg
+  background: $mid-gray
+.dark-gray-bg
+  background: $dark-gray

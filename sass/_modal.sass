@@ -1,0 +1,44 @@
+body
+  &.modal-open
+    overflow: hidden !important
+.modal
+  display: none
+  position: fixed
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background: rgba($primary, 0.6)
+  z-index: 2500
+  overflow-y: auto
+  .modal-container
+    max-height: 100vh
+    overflow-y: auto
+    +target(md)
+      overflow-y: visible
+  .modal-content
+    display: block
+    position: relative
+    top: ms(6)
+    border-radius: $border-radius
+    z-index: 3000
+    overflow-y: auto
+    min-height: 750px
+    margin-bottom: ms(0)
+    +target(md)
+      overflow-y: visible
+      margin-bottom: 0
+      min-height: 0
+    .form-container
+      width: ms(10)
+      max-width: 80%
+    .modal-header
+      padding: ms(0)
+      background: $mid-gray
+      border-top-left-radius: $border-radius
+      border-top-right-radius: $border-radius
+    .modal-body
+      padding: ms(0)
+      background: $white
+      border-bottom-left-radius: $border-radius
+      border-bottom-right-radius: $border-radius

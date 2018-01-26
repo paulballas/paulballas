@@ -1,0 +1,126 @@
+@font-face
+  font-family: 'Averta'
+  src: url('../font/Averta-Black.eot?#iefix') format("embedded-opentype"), url('../font/Averta-Black.otf') format("opentype"), url('../font/Averta-Black.woff') format("woff"), url('../font/Averta-Black.ttf') format("truetype"), url('../font/Averta-Black.svg#Averta-Black') format("svg")
+  font-weight: 900
+  font-style: normal
+
+@font-face
+  font-family: 'Averta'
+  src: url('../font/Averta-Bold.eot?#iefix') format("embedded-opentype"), url('../font/Averta-Bold.otf') format("opentype"), url('../font/Averta-Bold.woff') format("woff"), url('../font/Averta-Bold.ttf') format("truetype"), url('../font/Averta-Bold.svg#Averta-Bold') format("svg")
+  font-weight: 700
+  font-style: normal
+
+@font-face
+  font-family: 'Averta'
+  src: url('../font/Averta-Semibold.eot?#iefix') format("embedded-opentype"), url('../font/Averta-Semibold.otf') format("opentype"), url('../font/Averta-Semibold.woff') format("woff"), url('../font/Averta-Semibold.ttf') format("truetype"), url('../font/Averta-Semibold.svg#Averta-Semibold') format("svg")
+  font-weight: 600
+  font-style: normal
+
+@font-face
+  font-family: 'Averta'
+  src: url('../font/Averta-Regular.eot?#iefix') format("embedded-opentype"), url('../font/Averta-Regular.otf') format("opentype"), url('../font/Averta-Regular.woff') format("woff"), url('../font/Averta-Regular.ttf') format("truetype"), url('../font/Averta-Regular.svg#Averta-Regular') format("svg")
+  font-weight: 400
+  font-style: normal
+
+@font-face
+  font-family: 'Averta'
+  src: url('../font/Averta-Light.eot?#iefix') format("embedded-opentype"), url('../font/Averta-Light.otf') format("opentype"), url('../font/Averta-Light.woff') format("woff"), url('../font/Averta-Light.ttf') format("truetype"), url('../font/Averta-Light.svg#Averta-Light') format("svg")
+  font-weight: 300
+  font-style: normal
+
+=font($weight)
+  font-family: 'Averta', sans-serif
+  font-weight: $weight
+  color: $primary
+
+*, html, body, p, span, a, ul li
+  +font(400)
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, li
+  margin-top: 0
+  margin-bottom: $base-margin
+
+h1, h2
+  line-height: 1.1
+
+h1
+  +font(900)
+  font-size: ms(4)
+  +target(md)
+    font-size: ms(6)
+
+h2
+  +font(700)
+  font-size: ms(3)
+  +target(md)
+    font-size: ms(5)
+
+h3
+  +font(400)
+  font-size: ms(2)
+  line-height: ms(4)
+  +target(md)
+    font-size: ms(3)
+  &.h35
+    font-size: 1.5em    
+
+h4
+  +font(700)
+  font-size: ms(0)
+  line-height: ms(3)
+  +target(md)
+    font-size: ms(1)
+
+h5, h6
+  +font(300)
+  font-size: ms(0)
+  line-height: ms(2)
+
+p, li
+  font-size: ms(1)
+  line-height: 1.4
+  font-weight: 400
+  &.small, &.wee
+    font-size: ms(0)
+    line-height: ms(1)
+b
+  +font(600)
+
+.type-secondary
+  color: $secondary
+.type-a-pop
+  color: $a-pop
+.type-b-pop
+  color: $b-pop
+.type-c-pop
+  color: $c-pop
+.type-d-pop
+  color: $d-pop
+.type-e-pop
+  color: $e-pop
+.type-white
+  color: $white
+
+.extra-small
+  font-size: 0.875em
+
+.xxs-type
+  font-size: 0.75em
+
+.type-black
+  font-weight: 900
+
+.type-cap
+  text-transform: capitalize
+
+.type-lower
+  text-transform: lowercase
+
+$alignment: center left right
+
+@each $target, $size in $targets
+  @each $v in $alignment
+    .#{$v}-text-#{$target}
+      +target($target)
+        &, *
+          text-align: $v

@@ -1,0 +1,67 @@
+extends layout
+
+block settings
+  - var subheader = false;
+  - var slug = 'index';
+  
+block content
+  .ccd2e7
+    .container
+      .pad-container
+        .row.middle-xs
+          .col-md-7.col-xs-12.m-b-1-xs
+            img.full(src='/assets/big-wheel.jpg' alt='Big Wheel')
+          .col-md-5.col-xs-12
+            h2.tpe-black Hi there.
+            h3.h35.type-secondary.p-r-xs I'm Paul, a designer and developer living in Denver, CO.
+            a.a-pop.observable.no-under(href='/portfolio') View portfolio
+  .mid-gray-bg
+    .container
+      .pad-container-lg
+        .row.middle-xs
+          .col-md-4.col-xs-12.m-b-3-xs
+            h3.type-black Plum Relish
+            h3.h35.type-secondary Currently, I'm the VP of Product & Design at Plum Relish.
+              br
+              br
+              | Our web (and mobile friendly) application provides meals to thousands of hungry eaters.
+            a(class='no-under observable' href='/projects/portfolio/relish') View projects at Plum Relish
+          .col-md-8.col-xs-12
+            +img('plumrelish', 'png')(class='full img-pop')
+  .ccd2e7
+    .container
+      .pad-container-lg
+        .row.middle-xs
+          .col-md-4.col-md-offset-1.col-xs-12
+            .phone-static
+              img.full(src='/assets/p-chat.png' alt='Pana Chat')
+            .phone-video
+              img.full(src='/assets/iphone.png' alt='iPhone')
+              video(autoplay loop)
+                source(src='/assets/p-vid.mp4')
+                source(src='/assets/p-vid.webm')
+          .col-md-7.col-xs-12.last-md.first-xs.m-b-3-xs
+            .p-l-xs
+              h3.type-black Pana
+              h3.h35.type-secondary Previously the Head of Product (and designer) at Pana.
+                br
+                br
+                | We made travel delightful through our concierge mobile and web products.
+              a(class='no-under observable' href='/projects/portfolio/pana') View projects at Pana
+            
+  .mid-gray-bg
+    .container
+      .pad-container-lg
+        .row
+          .col-xs-12
+            .row.middle-xs
+              .col-md-4.col-xs-12.m-b-3-xs
+                h3.type-black Plum Relish
+                h3.h35.type-secondary I was a Lead UX Designer at Deloitte Digital.
+                  br
+                  br
+                  | I worked on several large-scale mobile and web applications, mainly for government clients.
+                a(class='no-under observable' href='/projects/portfolio/ytb') View projects at Deloitte Digital
+              .col-md-8.col-xs-12
+                +img('dd-hero', 'jpg')(class='full')
+              

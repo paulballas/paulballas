@@ -1,0 +1,68 @@
+include mixins
+
+block settings  
+  - var slug = '';
+
+doctype html
+html(class= slug)
+  head
+    meta(name='robots' content='noindex, nofollow')
+    meta(name='description' content="Paul Ballas - Designer & Developer")  
+    title= title
+    link(rel='stylesheet', href='/css/app.css')
+  body
+    block header
+      header.a-pop-bg
+        .container
+          .row.middle-xs.relative
+            a.logo(href='/')
+              +img('paul-ballas', 'jpg')  
+            .col-md-6.col-xs-12.left-text-md.center-text-xs
+              a(href='/')
+                +logo
+            .col-md-6.col-xs-12.right-text-md.center-text-xs
+              nav
+                ul
+                  li.small
+                    a(class='no-under portfolio light-text m-b-0' href='/portfolio' title='Paul Portfolio') Portfolio
+                  li.small
+                    a(class='no-under email' title='Contact Paul by email')
+                      +email
+                  li.small
+                    a(class='no-under twitter' href='https://twitter.com/paulballas' target='_blank' title='Contact Paul on Twitter')
+                      +twitter
+                  li.small
+                    a(class='no-under linkedin' href='https://www.linkedin.com/in/paulballas/' target='_blank' title='Contact Paul on LinkedIn')
+                      +linkedin
+                  li.small
+                    a(class='no-under dribbble' href='https://dribbble.com/paulballas' target='_blank' title='Contact Paul on Dribbble')
+                      +dribbble
+                  li.small
+                    a(class='no-under github' href='https://github.com/paulballas' target='_blank' title='Contact Paul on GitHub')  
+    block email
+      .modal
+        .container.modal-container                    
+          .row
+            .col-md-8.col-md-offset-2.col-xs-12
+              .modal-content
+                .modal-header.flex.middle.between
+                  p.m-b-0
+                    b Email Paul
+                  a.m-b-0.close-modal.observable Close
+                .modal-body
+                  form(id='email_paul')
+                    .form-item
+                      label Name
+                      input(type='text' placeholder='Awesome McAwesome' name='name')
+                    .form-item
+                      label Your Email
+                      input(type='email' placeholder='awesome@email.com' name='email')
+                    .form-item
+                      label Message
+                      textarea(type='text' placeholder='Hello...' rows='5' name='message')
+                    .form-item
+                      input.m-b-0.form-submit(type='submit' value='Submit')
+    block content
+    block scripts
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
+      script(src='/js/app.js')      

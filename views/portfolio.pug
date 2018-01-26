@@ -1,0 +1,26 @@
+extends layout
+
+block settings  
+  - var slug = 'portfolio';
+    
+block content
+  .mid-gray-bg
+    .container
+      .pad-container
+        .row
+          .col-md-10.col-md-offset-1.co-xs-12
+            h3 Portfolio
+            p I have had the privilege of working on many amazing projects, with amazing teams. I love what I do. Giving back to the design and tech community is important. Whether it's helping companies at 1776 or teaching students at General Assembly.
+              br
+              br
+              | My work history includes web, mobile and responsive projects. The full range my of projects is not included below. This provides a small insight into my work. I would love to have a conversation about the full range of my portfolio.
+            p
+              b Interested in my design process? 
+              a(class='no-under small observable' href='/portfolio/process') Learn more about it...
+            .space-2
+            .row              
+              each project in projects            
+                .col-md-6.col-xs-12                                  
+                  a.port-body(href='/portfolio/' + project.url)
+                    p.m-b-xs-0 #{project.name}                  
+                    +imgBackground(project.url)(class='full')

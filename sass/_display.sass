@@ -1,0 +1,32 @@
+.block
+  display: block
+
+.inline-block
+  display: inline-block !important
+
+.block-xs
+  display: block
+  +target(md)
+    display: initial
+
+.flex
+  display: flex
+  &.column
+    flex-direction: column
+  &.middle
+    align-items: center
+  &.between
+    justify-content: space-between
+  &.around
+    justify-content: space-around
+  &.end
+    justify-content: flex-end
+  &.start
+    justify-content: flex-start
+  .table-item-3
+    flex-basis: percentage(4/12)
+    max-width: percentage(4/12)
+  &.column-xs
+    flex-direction: column
+    +target(md)
+      flex-direction: row

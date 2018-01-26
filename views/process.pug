@@ -1,0 +1,147 @@
+extends layout
+
+block settings  
+  - var slug = 'process';
+    
+block content
+  .ccd2e7
+    .container
+      .p-t-xs-6.p-b-xs-6
+        .row
+          .col-xs-12
+            h3.h35.m-b-0.type-black Design process.          
+            p 
+              b Great products are not designed by accident. 
+              | Instead of a deisgn process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset.                           
+            p Similar to many code frameworks, my design framework:
+            ul
+              li Provides structure but also allows for creativity.
+              li Easily scales up or down, depending on the type of project.
+              li Has assets that can be used as the situation or user needs dictate.
+              li Allows for creativity without breaking everything else.
+  .mid-gray-bg          
+    .container
+      .pad-container-xs
+        .row
+          .col-xs-12
+            h3.h35 Define the problem.
+            p It's hard to know where you're headed without clear understanding of what's broken.
+          .col-xs-12
+            h4 Questions to answer:
+          .col-md-6.col-xs-12
+            ul
+              li What are the user needs?
+              li If the problem exists, how it is already being solved?
+          .col-md-6.col-xs-12
+            ul
+              li What are demographics and characteristics of the user?
+              li What existing behaviors are you competing against?
+    //- Identify goals
+    .container
+      .pad-container-xs
+        .row
+          .col-xs-12
+            h3.h35 Identify goals.
+            p Identifying both the  
+              span user's goals
+              |  and the 
+              span business goals 
+              |  will help shape where the product should be headed. After performing research and talking to as many users as the project allows, personas are a handy tool to share with your team.
+        .row
+          .col-md-10.col-md-offset-1.col-xs-12
+            +imgProcess('personas_james', 'png', true)              
+            .space-1
+            caption
+              a(href='/portfolio/personas') More examples of personas...
+    //- Generate ideas
+    .container
+      .pad-container-xs
+        .row
+          .col-xs-12
+            h3.h35 Generate ideas.
+            p After defining your problem start ideating around possible concepts. Sticky notes are my favorite for rapid ideating—they force an idea to be concise. After you've generated a bunch of ideas, stickies are easy to group together and consolidate or eliminate ideas.
+            p A Great book on ideating best practices and initial sketches 
+             a(href='http://www.gv.com/sprint/') Sprint, by Google Ventures
+        .row
+          .col-md-4.col-xs-12
+            +imgProcess('idea-3', 'jpg')              
+          .col-md-4.col-xs-12
+            +imgProcess('idea-2', 'jpg')              
+          .col-md-4.col-xs-12
+            +imgProcess('idea-1', 'jpg')              
+    //- sketch prototype repeat
+    .container
+      .pad-container-xs
+        .row
+          .col-xs-12
+            h3.h35 Sketch. Prototype. Repeat.
+            p Generate low-fidelity ideas. I prefer to sketch first on either a whiteboard or pencil and paper. Rather than concentrate on new features, I focus on the flow and the user's journey from start to finish.
+        .row
+          .col-md-4.col-xs-12
+            +imgProcess('sketch-3', 'jpg')              
+          .col-md-4.col-xs-12
+            +imgProcess('sketch-2', 'jpg')              
+          .col-md-4.col-xs-12
+            +imgProcess('sketch-1', 'jpg')              
+        .row
+          .col-md-4.col-xs-12
+            +imgProcess('sketch-4', 'jpg')              
+          .col-md-8.col-xs-12
+            +imgProcess('sketch-5', 'jpg')              
+        .row
+          .col-xs-12
+            h3 Prototypes
+            p Ther are so many tools out there to prototype, and it doesn't really matter which one you use. As long as they are cheap, quick, and help validate your ideas.
+            p My favorite tool is 
+              span InVision
+              | , which easily allows me to drop in my Sketch files and create a prototype in minutes. Click the button below to see a live example of two of my prototypes.
+            p 
+              a.btn-default.btn-large.btn-magenta.type-white.super(href='https://invis.io/J38MQ8JBG' target='_blank') View Prototypes            
+    //- start lo-fi and build
+    .container
+      .pad-container
+        .row
+          .col-xs-12
+            h3.h35 Start with low-fidelity and scale up as needed.
+            p Once you've made a decision on which concept to build, start with low-fidelity mockups and scale up as needed. Depending on my client/project I'll tailor my workflow accordingly.
+        .row.middle-xs
+          .col-md-4.col-xs-12
+            +imgProcess('itinerary-wire','png', true)              
+            p.small.center-text-xs Initial idea
+          .col-md-4.col-xs-12
+            +imgProcess('itinerary-wire2','png', true)              
+            p.small.center-text-xs A few iterations later
+          .col-md-4.col-xs-12
+            +imgProcess('itinerary-final','png', true)              
+            p.small.center-text-xs Final product
+  //- analyze
+  .container
+    .pad-container
+      .row
+        .col-xs-12
+          h3.h35 Analyze and iterate.
+          p I'm not sure where I heard the expression 
+            span "don't hate... iterate" 
+            |  but it perfectly sums up what happens after a product launch. Once a product has been launched it's important to track and evaluate the performance. 
+            br
+            p Does it accomplish all of the original goals? What new features should be added? Is the product not being used at intended?
+          br
+          p I use a variety of tools to help evaluate the experience and efficacy of the product:
+          ul
+            li Remote testing
+              span : UserTesting, YouEye
+            li Analytics
+              span : Segment, Google Analyitcs, KissMetrics, Mixpanel
+            li User Conversations & Surveys
+              span : Google Hangouts, InVision, TypeForm
+  //- 
+  .dark-gray-bg  
+    .container
+      .pad-container
+        .row
+          .col-xs-12
+            h3.h35.type-darkmagenta Want to see more?
+            p.type-darkmagenta See how I teach design process to my student at General Assembly.
+        .row.center-xs        
+          .col-xs-12  
+            iframe(src='//www.slideshare.net/slideshow/embed_code/key/4xzD9n6uLIMk9r', width='595', height='485', frameborder='0', marginwidth='0', marginheight='0', scrolling='no', style='border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;', allowfullscreen='')

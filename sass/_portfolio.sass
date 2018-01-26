@@ -1,0 +1,60 @@
+.portfolio
+  .carousel
+    display: inline-block
+    overflow-x: scroll
+  a
+    &.port-body
+      display: block
+      position: relative
+      border: 2px solid #B5B7CE
+      border-radius: 3px
+      margin-bottom: ms(0)
+      transition: 300ms
+      p
+        background: lighten($primary, 10%)
+        color: $white
+        border-radius: 3px
+        padding: ms(-4)
+        position: absolute
+        left: ms(-2)
+        top: ms(-2)
+      &:hover, &.active
+        transform: translateY(-3px)
+        box-shadow: 0 0 2px $shadow-color, 0 8px 12px $shadow-color, 0 12px 24px $shadow-color, 0 16px 28px $shadow-color
+      &.pana-bg
+        background: url('/assets/portfolio/bg-pana.png') no-repeat 50% 50%
+        background-size: 100% auto
+      &.class-bg
+        background: url('/assets/portfolio/bg-class.png') no-repeat 50% 50%
+        background-size: 100% auto
+  .project
+    .flicker
+      img
+        width: 100%
+        height: auto
+    .hero,
+    .proj-deets
+      img
+        width: 100%
+        height: auto
+      ul
+        padding-left: ms(0)
+      svg
+        width: ms(4)
+        height: auto
+    .phone-video
+      position: relative
+      display: none
+      +target(md)
+        display: block
+      video
+        position: absolute
+        top: 92px
+        left: 24px
+        z-index: 1000
+        width: 87%
+        height: auto
+    .phone-static
+      display: block
+      +target(md)
+        display: none

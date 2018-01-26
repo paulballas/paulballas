@@ -1,0 +1,1 @@
+$(function(){var o;return console.log("How much wood could a woodchuck chuck if a woodchuck could chuck wood?"),o=$(".modal"),$("nav .email").click(function(){return o.fadeIn("fast"),o.addClass("modal-open")}),$(".modal .close-modal").click(function(){return o.fadeOut("fast")})});
