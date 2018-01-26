@@ -47,6 +47,11 @@ gulp.task('font', function() {
   .pipe(gulp.dest('./public/font'))
 });
 
+gulp.task('brand', function() {
+  gulp.src('./brand/*.*')
+    .pipe(gulp.dest('./public'));
+});
+
 gulp.task('watch', function() {
   livereload.listen()
   gulp.watch('./assets/*.*', ['assets']),
@@ -62,5 +67,5 @@ gulp.task('start', function () {
   })
 })
 
-gulp.task('production', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);
-gulp.task('default', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);
+gulp.task('production', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'brand', 'start' ]);
+gulp.task('default', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'brand', 'start' ]);
