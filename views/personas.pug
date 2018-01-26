@@ -1,34 +1,33 @@
 extends layout
 
 block settings
-  - var page = 'Personas'
-  - var classes = ['portfolio', 'dark']
+  - var slug = 'personas project'  
 
-block content
-  .project
-    .dark-gray-bg
-      .container.hero.pana-hero
-        .pad-container-xs
-          .row
-            .col-xs-12
-              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
-          .row.middle-xs
-            .col-md-5.col-xs-12
-              h3.h35 Personas
-              p One of my favorite parts of UX design is interviewing and discovering a new customer base. What types of people are they? What are their existing behaviors? Likes and dislikes?
-              
-              p After researching and interview, I typically create personas to provide the entire team an understanding of who we're building for. These help shape conversations and provide product direction.
-            .col-md-7
-              .proj-deets
-                img.p-l-md-2.p-l-xs-0(src='/assets/portfolio/personas_emma.png' alt='Persona')
-    //- agent
-    .bg-lightmagenta
-      .container.flicker
-        .pad-container-xs
-          .row.middle-xs
-            .col-md-8.col-md-offset-2.col-xs-12      
-              img(class='full' src='/assets/portfolio/personas_james.png' data-action='zoom' data-original='/assets/portfolio/personas_james.png' alt='Persona')
-            .col-md-8.col-md-offset-2.col-xs-12
-              img(class='full' src='/assets/portfolio/personas_mark.png' data-action='zoom' data-original='/assets/portfolio/personas_mark.png' alt='Persona')
-            .col-md-8.col-md-offset-2.col-xs-12
-              img(class='full' src='/assets/portfolio/personas_emma.png' data-action='zoom' data-original='/assets/portfolio/personas_emma.png' alt='Persona')
+block content  
+  .ccd2e7
+    .container
+      .pad-container
+        .row
+          .col-xs-12
+            a(href='/portfolio' class='no-under observable') Back to portfolio
+        .space-2
+        .row.middle-xs
+          .col-md-5.col-xs-12
+            h3.h35 Personas
+            p One of my favorite parts of UX design is interviewing and discovering a new customer base. What types of people are they? What are their existing behaviors? Likes and dislikes?
+            
+            p After researching and interview, I typically create personas to provide the entire team an understanding of who we're building for. These help shape conversations and provide product direction.
+          .col-md-7
+            .proj-deets
+              img.img-pop.full(src='/assets/portfolio/personas_emma.png' alt='Persona')
+  //- agent
+  .light-gray-bg
+    .container
+      .pad-container-xs
+        .row.middle-xs
+          .col-md-8.col-md-offset-2.col-xs-12      
+            img(class='full m-b-2 img-pop' src='/assets/portfolio/personas_james.png' data-action='zoom' data-original='/assets/portfolio/personas_james.png' alt='Persona')
+          .col-md-8.col-md-offset-2.col-xs-12
+            img(class='full m-b-2 img-pop' src='/assets/portfolio/personas_mark.png' data-action='zoom' data-original='/assets/portfolio/personas_mark.png' alt='Persona')
+          .col-md-8.col-md-offset-2.col-xs-12
+            img(class='full m-b-2 img-pop' src='/assets/portfolio/personas_emma.png' data-action='zoom' data-original='/assets/portfolio/personas_emma.png' alt='Persona')
