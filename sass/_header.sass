@@ -1,11 +1,13 @@
 header
   padding: ms(0) 0
   a.logo
-    display: block
+    display: none
     position: absolute
     top: 0
     left: 50%
     transform: translateX(-50%)
+    +target(md)
+      display: block
     &:hover
       img
         transition: all 400ms

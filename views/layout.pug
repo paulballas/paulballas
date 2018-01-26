@@ -4,8 +4,11 @@ block settings
   - var slug = '';
 
 doctype html
-html(class= slug)
+html(lang='en' class= slug)
   head
+    meta(charset='UTF-8')
+    meta( content="width=device-width, user-scalable=no", name="viewport" )
+      
     meta(name='robots' content='noindex, nofollow')
     meta(name="googlebot" content='noindex, nofollow')  
     meta(name='description' content="Paul Ballas - Designer & Developer")  
@@ -41,7 +44,7 @@ html(class= slug)
             a.logo(href='/')
               +img('paul-ballas', 'jpg')  
             .col-md-6.col-xs-12.left-text-md.center-text-xs
-              a(href='/')
+              a(class='block m-b-2-xs' href='/')
                 +logo
             .col-md-6.col-xs-12.right-text-md.center-text-xs
               nav
