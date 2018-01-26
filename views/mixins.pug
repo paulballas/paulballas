@@ -11,7 +11,7 @@ mixin imgProcess(name, ext, dir)
     - var url ='/assets/portfolio/' + name + '.' + ext
   else 
     - var url ='/assets/portfolio/process/' + name + '.' + ext
-  img.full(src= url data-action='zoom' data-original= url alt='Ideas')
+  img.full(class!=attributes.class src= url data-action='zoom' data-original= url alt='Ideas')
     
 mixin logo
   <svg width="80px" height="36px" viewBox="107 184 80 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">

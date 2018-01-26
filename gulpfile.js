@@ -17,12 +17,6 @@ gulp.task('assets', function() {
   .pipe(livereload());
 });
 
-gulp.task('json', function() {
-  return gulp.src('./data.json')
-    .pipe(jsonMinify())
-    .pipe(gulp.dest('./'))
-});
-
 gulp.task('pug', function(){
   gulp.src('client/templates/*.pug')
   .pipe(pug())
@@ -68,5 +62,5 @@ gulp.task('start', function () {
   })
 })
 
-gulp.task('production', [ 'assets', 'json','pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);
-gulp.task('default', [ 'assets', 'json','pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);
+gulp.task('production', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);
+gulp.task('default', [ 'assets', 'pug', 'sass', 'coffee', 'watch', 'font', 'start' ]);

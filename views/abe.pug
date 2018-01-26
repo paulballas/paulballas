@@ -1,0 +1,56 @@
+extends layout
+
+block settings
+  - var slug = 'abe-mobile'
+  
+block content
+  .project
+    .dark-gray-bg
+      .container.hero.pana-hero
+        .pad-container-xs
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-7.col-xs-12
+              h3.h35 ABE Mobile
+              h3 Lead UX designer for the ABE Mobile
+              p Similar to 
+                a(href='/portfolio/ytb') Texas
+                | , Illinois also wanted a solution for their state benefit recipients. Critical benefits such as food stamps, child care and Medicaid were a hassle to apply for and renew.
+              p I started by eliminating the bottleneck - providing documentation to the state benefits office. Documents such as a driver license or pay stubs had to be either hand delivered or faxed in.
+              p With the new ABE mobile app, users are able to upload a picture of their document to the benefits office. This prevents the user from delivering the documentation in person.           
+            .col-md-5
+              .proj-deets
+                img(class='full' src='/assets/portfolio/abe-mobile.png' alt='YTB')
+    //- agent
+    .bg-lightgray
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h3 Customer discovery & research.
+              p.type-darkmagenta Before building, my team and I conducted interviews and conducted extensive research. The case workers had many ideas on making the mobile app a seamless process for the user.
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/abe_wires.png' alt='agent')
+    //- mobile
+    .bg-lightgray
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs            
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/abe_process.png' alt='agent')
+            .col-md-5.col-xs-12
+              h3 Wireframing and design.
+              p.type-darkmagenta My team and I continued to revise the flow for the unique client needs.
+        
+    //- pana web
+    .bg-urple
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs          
+            .col-xs-12
+              h3 Final product.
+              p.type-darkmagenta The mobile app has yet to officially launch, but the clients could not be more happier about what’s coming. They’re aware of the success in Texas, and can’t wait to deploy a similar solution to their population.
+            .col-xs-12
+              img(class='full' src='/assets/portfolio/abe-final.png' alt='agent')

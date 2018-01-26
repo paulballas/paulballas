@@ -1,0 +1,107 @@
+extends layout
+
+block settings
+  - var page = 'pana'  
+
+block content
+  .project
+    .dark-gray-bg
+      .container.hero.pana-hero
+        .pad-container-xs
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-7.col-xs-12
+              h3.h35 Pana
+              h3 As the Head of Product (and designer) at Pana, I designed all of web and mobile products.
+              p.type-gs Some of my daily fun:
+                ul
+                  li Research and customer discovery.
+                  li Feedback calls and meetings with customers.
+                  li Creating wires and mocks for new features or ideas.
+                  li Managing our sprint process... we use ProductBoard.
+                  li Writing front-end code.
+                  li Ideating into the wee hours of the evening.                
+            .col-md-5
+              .phone-static
+                img(class='full' src='/assets/portfolio/p-chat.png' alt='Pana Chat')
+              .phone-video
+                img(class='full' src='/assets/portfolio/iphone.png' alt='iPhone')
+                video(autoplay loop)
+                  source(src='/public/videos/hero.mp4')
+                  source(src='/public/videos/hero.webm')
+    //- agent
+    .bg-lightmagenta
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h3 Agent & research app.
+              p.type-darkmagenta Pana has agents and researchers based all over the world. Our agent app allows them to communicate and interact with our customers.
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/agent.png' alt='agent')
+    //- mobile
+    .bg-urple
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs
+            .col-xs-12
+              h3 Mobile app.
+              p.type-darkmagenta Pana has agents and researchers based all over the world. Our agent app allows them to communicate and interact with our customers.
+            .col-md-4.col-xs-12
+              img(class='full' src='/assets/portfolio/itinerary-wire.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Initial idea
+            .col-md-4.col-xs-12
+              img(class='full' src='/assets/portfolio/itinerary-wire2.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs A few iterations later
+            .col-md-4.col-xs-12
+              img(class='full' src='/assets/portfolio/itinerary-final.png' alt='itinerary')
+              p.small.center-text-xs.type-magenta.type-gs Final product
+    .bg-lightmagenta
+      .container.flicker
+        .pad-container-xs
+          .row.middle-xs
+            .col-xs-12
+              h4 Low-fidelity flows
+          .row.middle-xs
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/agt-1.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/agt-1.png')    
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/agt-2.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/agt-2.png')    
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/agt-3.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/agt-3.png')
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/agt-4.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/agt-4.png')
+      .container.flicker
+        .pad-container-xs
+          .row.middle-xs
+            .col-xs-12
+              h4 Medium-fidelity flows
+          .row.middle-xs
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/search-3.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/search-3.png')                    
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/search-4.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/search-4.png')               
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/search-6.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/search-6.png')                
+            .col-md-6.col-xs-12
+              img(class='full' src='/assets/portfolio/search-7.png' alt='Persona' data-action='zoom' data-original='/assets/portfolio/search-7.png')
+    //- pana web
+    .ccd2e7
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs          
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/p-web.png' alt='web')
+            .col-md-5.col-xs-12
+              h3.type-white Web app.
+              p.type-white Pana web provides an additional outlet for our members as well as functionality to support the travel for entire company.
+    //- summary
+    .dark-gray-bg
+      .container.proj-deets
+        .pad-container-xs
+          .row
+            .col-xs-12.center-text-xs              
+              .space-1
+              h4 Pana supports the travel for thousands of members across hundreds of companies. As the Head of Product, every day is met with a variety of unique challenges. Pana's consumer and business products are truly making travel delightful again.

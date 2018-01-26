@@ -26,6 +26,10 @@ html(class= slug)
                   li.small
                     a(class='no-under portfolio light-text m-b-0' href='/portfolio' title='Paul Portfolio') Portfolio
                   li.small
+                    a(class='no-under portfolio light-text m-b-0' href='/portfolio/illustrations' title='Paul Portfolio') Illustrations
+                  li.small.type-white |
+                    
+                  li.small
                     a(class='no-under email' title='Contact Paul by email')
                       +email
                   li.small
@@ -50,6 +54,8 @@ html(class= slug)
                     b Email Paul
                   a.m-b-0.close-modal.observable Close
                 .modal-body
+                  .on-success
+                    h3.type-black Success!
                   form(id='email_paul')
                     .form-item
                       label Name

@@ -1,0 +1,66 @@
+extends layout
+
+block settings
+  - var slug = 'ytb'  
+
+block content
+  .project
+    .dark-gray-bg
+      .container.hero.pana-hero
+        .pad-container-xs
+          .row
+            .col-xs-12
+              a(href='/portfolio' class='btn-default btn-lightmagenta m-b-xs-0') Back to portfolio
+          .row.middle-xs
+            .col-md-7.col-xs-12
+              h3.h35 Your Texas Benefits
+              h3 Lead UX designer for the Your Texas Benefits mobile app.
+              p Texas receives thousands of applications for state benefits each month. Critical benefits such as food stamps, child care, and Medicaid. Applying for these benefits is long and requires many steps.
+              p I started by eliminating the bottleneck - providing documentation to the state benefits office. Documents such as a drivers license or pay stubs had to be either hand delivered or faxed in.
+              p With the new Your Texas Benefits mobile app, users are able to upload a picture of their document to the benefits office. This prevents the user from delivering the documentation in person.              
+            .col-md-5
+              .proj-deets
+                img(class='full' src='/assets/portfolio/ytb-final1.png' alt='YTB')
+    //- agent
+    .bg-lightmagenta
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h3 Customer discovery & research.
+              p.type-darkmagenta Before building, my team and I conducted interviews and conducted extensive research. The case workers had many ideas on making the mobile app a seamless process for the user. 
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/ytb_wire.png' alt='agent')
+    //- mobile
+    .bg-urple
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs
+            .col-md-5.col-xs-12
+              h3 Wireframing and design.
+              p.type-darkmagenta My team and I continued to revise the flow for the unique client needs.
+            .col-md-7.col-xs-12
+              img(class='full' src='/assets/portfolio/ytb_process.png' alt='agent')
+            
+    //- pana web
+    .ccd2e7
+      .container.proj-deets
+        .pad-container-xs
+          .row.middle-xs          
+            .col-xs-12
+              h3.type-white Final product.
+              p.type-white After only a few months in the app store, the app has had over 125,000 downloads and 150,000 documents submissions.
+            .col-md-5.col-xs-12
+              img(class='full' src='/assets/portfolio/ytb-final1.png' alt='itinerary')
+              p.small.center-text-xs.type-white.type-gs Login
+            .col-md-5.col-md-offset-2.col-xs-12
+              img(class='full' src='/assets/portfolio/ytb-final2.png' alt='itinerary')
+              p.small.center-text-xs.type-white.type-gs Benefit center location
+    
+    //- summary
+    .dark-gray-bg
+      .container.proj-deets
+        .pad-container-xs
+          .row
+            .col-xs-12.center-text-xs
+              h4 The app is currently expanding with new features, such as the ability to create a new account and edit existing benefits. Texas has opened access to their benefits application, regardless of the user's personal technology. The State has paved the way for more States to follow in their footsteps.

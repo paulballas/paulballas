@@ -6,14 +6,17 @@ block settings
 block content
   .ccd2e7
     .container
-      .p-t-xs-6.p-b-xs-6
+      .pad-container-xs
+        .row
+          .col-xs
+            a(href='/portfolio' class='no-under observable') Back to portfolio
+        .space-2
         .row
           .col-xs-12
-            h3.h35.m-b-0.type-black Design process.          
-            p 
+            h3.m-b-half.h35.type-black.m-b-0.type-black Design process.          
+            p
               b Great products are not designed by accident. 
-              | Instead of a deisgn process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset.                           
-            p Similar to many code frameworks, my design framework:
+              | Instead of a design process with strict rules, I think more about it as a framework. There are general guidelines I follow, but I also know when to deviate and get creative—always maintaining a customer first mindset.Similar to many code frameworks, my design framework:    
             ul
               li Provides structure but also allows for creativity.
               li Easily scales up or down, depending on the type of project.
@@ -24,8 +27,8 @@ block content
       .pad-container-xs
         .row
           .col-xs-12
-            h3.h35 Define the problem.
-            p It's hard to know where you're headed without clear understanding of what's broken.
+            h3.m-b-half.h35.type-black 1. Define the problem
+            p It's hard to know where you're headed without a clear understanding of what's broken.
           .col-xs-12
             h4 Questions to answer:
           .col-md-6.col-xs-12
@@ -41,7 +44,7 @@ block content
       .pad-container-xs
         .row
           .col-xs-12
-            h3.h35 Identify goals.
+            h3.m-b-half.h35.type-black 2. Identify goals
             p Identifying both the  
               span user's goals
               |  and the 
@@ -49,7 +52,7 @@ block content
               |  will help shape where the product should be headed. After performing research and talking to as many users as the project allows, personas are a handy tool to share with your team.
         .row
           .col-md-10.col-md-offset-1.col-xs-12
-            +imgProcess('personas_james', 'png', true)              
+            +imgProcess('personas_james', 'png', true)
             .space-1
             caption
               a(href='/portfolio/personas') More examples of personas...
@@ -58,89 +61,89 @@ block content
       .pad-container-xs
         .row
           .col-xs-12
-            h3.h35 Generate ideas.
+            h3.m-b-half.h35.type-black 3. Generate ideas
             p After defining your problem start ideating around possible concepts. Sticky notes are my favorite for rapid ideating—they force an idea to be concise. After you've generated a bunch of ideas, stickies are easy to group together and consolidate or eliminate ideas.
-            p A Great book on ideating best practices and initial sketches 
-             a(href='http://www.gv.com/sprint/') Sprint, by Google Ventures
+            p.inline-block A Great book on ideating best practices and initial sketches:
+            | 
+            a(href='http://www.gv.com/sprint/' class='no-under observable lg') Sprint, by Google Ventures
         .row
           .col-md-4.col-xs-12
-            +imgProcess('idea-3', 'jpg')              
+            +imgProcess('idea-3', 'jpg')
           .col-md-4.col-xs-12
-            +imgProcess('idea-2', 'jpg')              
+            +imgProcess('idea-2', 'jpg')
           .col-md-4.col-xs-12
-            +imgProcess('idea-1', 'jpg')              
+            +imgProcess('idea-1', 'jpg')
     //- sketch prototype repeat
     .container
       .pad-container-xs
         .row
           .col-xs-12
-            h3.h35 Sketch. Prototype. Repeat.
+            h3.m-b-half.h35.type-black 4. Sketch, prototype, repeat
             p Generate low-fidelity ideas. I prefer to sketch first on either a whiteboard or pencil and paper. Rather than concentrate on new features, I focus on the flow and the user's journey from start to finish.
         .row
           .col-md-4.col-xs-12
-            +imgProcess('sketch-3', 'jpg')              
+            +imgProcess('sketch-3', 'jpg')(class='img-pop m-b-1')
           .col-md-4.col-xs-12
-            +imgProcess('sketch-2', 'jpg')              
+            +imgProcess('sketch-2', 'jpg')(class='img-pop m-b-1')
           .col-md-4.col-xs-12
-            +imgProcess('sketch-1', 'jpg')              
+            +imgProcess('sketch-1', 'jpg')(class='img-pop m-b-1')
         .row
           .col-md-4.col-xs-12
-            +imgProcess('sketch-4', 'jpg')              
+            +imgProcess('sketch-4', 'jpg')(class='img-pop m-b-1')
           .col-md-8.col-xs-12
-            +imgProcess('sketch-5', 'jpg')              
+            +imgProcess('sketch-5', 'jpg')(class='img-pop m-b-1')            
         .row
           .col-xs-12
-            h3 Prototypes
-            p Ther are so many tools out there to prototype, and it doesn't really matter which one you use. As long as they are cheap, quick, and help validate your ideas.
+            h4 Prototypes
+            p There are so many tools out there to prototype, and it doesn't really matter which one you use. As long as they are cheap, quick, and help validate your ideas.
             p My favorite tool is 
               span InVision
               | , which easily allows me to drop in my Sketch files and create a prototype in minutes. Click the button below to see a live example of two of my prototypes.
-            p 
-              a.btn-default.btn-large.btn-magenta.type-white.super(href='https://invis.io/J38MQ8JBG' target='_blank') View Prototypes            
+            a(href='https://invis.io/J38MQ8JBG' target='_blank' class='no-under observable') View InVision Prototypes            
     //- start lo-fi and build
     .container
-      .pad-container
+      .pad-container-xs        
         .row
           .col-xs-12
-            h3.h35 Start with low-fidelity and scale up as needed.
+            h3.m-b-half.h35.type-black 5. Start with low-fidelity and scale up as needed
             p Once you've made a decision on which concept to build, start with low-fidelity mockups and scale up as needed. Depending on my client/project I'll tailor my workflow accordingly.
         .row.middle-xs
           .col-md-4.col-xs-12
-            +imgProcess('itinerary-wire','png', true)              
+            +imgProcess('itinerary-wire','png', true)(class='img-pop')
             p.small.center-text-xs Initial idea
           .col-md-4.col-xs-12
-            +imgProcess('itinerary-wire2','png', true)              
+            +imgProcess('itinerary-wire2','png', true)(class='img-pop')
             p.small.center-text-xs A few iterations later
           .col-md-4.col-xs-12
-            +imgProcess('itinerary-final','png', true)              
+            +imgProcess('itinerary-final','png', true)
             p.small.center-text-xs Final product
-  //- analyze
-  .container
-    .pad-container
-      .row
-        .col-xs-12
-          h3.h35 Analyze and iterate.
-          p I'm not sure where I heard the expression 
-            span "don't hate... iterate" 
-            |  but it perfectly sums up what happens after a product launch. Once a product has been launched it's important to track and evaluate the performance. 
-            br
-            p Does it accomplish all of the original goals? What new features should be added? Is the product not being used at intended?
-          br
-          p I use a variety of tools to help evaluate the experience and efficacy of the product:
-          ul
-            li Remote testing
-              span : UserTesting, YouEye
-            li Analytics
-              span : Segment, Google Analyitcs, KissMetrics, Mixpanel
-            li User Conversations & Surveys
-              span : Google Hangouts, InVision, TypeForm
-  //- 
-  .dark-gray-bg  
+    //- analyze
     .container
-      .pad-container
+      .pad-container-xs
         .row
           .col-xs-12
-            h3.h35.type-darkmagenta Want to see more?
+            h3.m-b-half.h35.type-black 6. Analyze and iterate
+            p I'm not sure where I heard the expression 
+              span "don't hate... iterate" 
+              |  but it perfectly sums up what happens after a product launch. Once a product has been launched it's important to track and evaluate the performance. 
+              br
+              p Does it accomplish all of the original goals? What new features should be added? Is the product not being used as intended?
+            br
+            p I use a variety of tools to help evaluate the experience and efficacy of the product:
+            ul
+              li Remote testing
+                span : UserTesting, YouEye
+              li Analytics
+                span : Segment, Google Analytics, KissMetrics, Mixpanel
+              li User Conversations & Surveys
+                span : Google Hangouts, InVision, TypeForm
+  //- 
+  .ccd2e7
+    .container
+      .pad-container-xs
+        .row
+          .col-xs-12
+            h3.m-b-half.h35.type-black.type-darkmagenta Want to see more?
             p.type-darkmagenta See how I teach design process to my student at General Assembly.
         .row.center-xs        
           .col-xs-12  
