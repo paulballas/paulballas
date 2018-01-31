@@ -36,6 +36,12 @@ html(lang='en' class= slug)
     meta(name='theme-color', content='#ffffff')
     
     link(rel='stylesheet', href='/css/app.css')
+    script(async='', src='https://www.googletagmanager.com/gtag/js?id=UA-113305039-1')
+    script.
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-113305039-1');
   body
     block header
       header.a-pop-bg
