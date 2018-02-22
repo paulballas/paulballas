@@ -24,10 +24,6 @@ router.get('/portfolio/class', function(req, res, next) {
   res.render('class', { title: 'Paul Ballas' });
 });
 
-router.get('/portfolio/hw', function(req, res, next) {
-  res.render('hw', { title: 'Paul Ballas' });
-});
-
 router.get('/portfolio/illustrations', function(req, res, next) {
   res.render('illustrations', { title: 'Paul Ballas', comics });
 });
