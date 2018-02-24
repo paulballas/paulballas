@@ -5,7 +5,7 @@ var comics = require('../data/comics.json')
 var router = express.Router();
 
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Paul Ballas' });
+  res.render('home', { title: 'Paul Ballas' });
 });
 
 router.get('/portfolio', function(req, res, next) {
