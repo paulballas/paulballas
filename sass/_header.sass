@@ -34,10 +34,14 @@ header
         a
           vertical-align: middle
           color: $white
+          transition: all 300ms
+          &:hover
+            color: rgba($white, 0.7)
           svg
             vertical-align: bottom
+            transition: all 300ms
           &:hover
             svg g
-              stroke: darken($dark-gray, 10%)
+              stroke: rgba($white, 0.7)
             svg.fill g path
-              fill: darken($dark-gray, 10%)
+              fill: rgba($white, 0.7)
