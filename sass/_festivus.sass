@@ -6,7 +6,6 @@
 .ccd2e7
   background: #ccd2e7
 a
-  transition: all 400ms
   &.lg
     font-size: ms(1)
   &.no-under
@@ -112,6 +111,14 @@ img
   &.img-pop
     border: 2px solid $mid-gray
     box-shadow: 2px 2px 20px rgba($primary, 0.1)
+  &.mw-50-xs
+    max-width: 50%
+    +target(md)
+      max-width: 100%
+  &.mw-70-xs
+    max-width: 70%
+    +target(md)
+      max-width: 100%
 
 svg
   &.mw-2
