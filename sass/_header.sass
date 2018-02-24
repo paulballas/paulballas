@@ -6,16 +6,17 @@ header
     top: 0
     left: 50%
     transform: translateX(-50%)
+    transition: all 300ms
     +target(md)
       display: block
-    &:hover
-      img
-        transition: all 400ms
-        max-width: ms(8)
     img
       max-width: ms(7)
-      border: 2px solid $mid-gray
+      border: 2px solid $dark-gray
       border-radius: 100%
+      transition: all 300ms
+    &:hover
+      img
+        transform: scale(1.1, 1.1)
   nav
     ul
       margin: 0
