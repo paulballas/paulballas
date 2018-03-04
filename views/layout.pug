@@ -61,16 +61,14 @@ html(lang='en' class= slug)
                     a(class='no-under portfolio light-text m-b-0' href='/logos' title='Paul Portfolio') Logos
                   li.small
                     a(class='no-under email' title='Contact Paul by email')
-                      +email
-                  li.small
-                    a(class='no-under twitter' href='https://twitter.com/paulballas' target='_blank' title='Contact Paul on Twitter')
-                      +twitter
+                      +email            
                   li.small
                     a(class='no-under linkedin' href='https://www.linkedin.com/in/paulballas/' target='_blank' title='Contact Paul on LinkedIn')
                       +linkedin                  
                   li.small
                     a(class='no-under github' href='https://github.com/paulballas' target='_blank' title='Contact Paul on GitHub')
-                      +github                      
+                      +github
+                        +github                      
     block email
       .modal
         .container.modal-container                    
@@ -97,6 +95,26 @@ html(lang='en' class= slug)
                     .form-item
                       input.m-b-0.form-submit(type='submit' value='Submit')
     block content
+    block footer
+      .dark-gray-bg.footer
+        .container
+          .pad-container
+            .row.m-b-2
+              .col-xs-12.center-text-xs
+                h6 paul ballas
+            .row
+              .col-md-8.col-md-offset-2.col-xs
+                .row
+                  .col-md.col-xs-12
+                    a(class='no-under m-b-1-xs' href='/portfolio' title='Paul Portfolio') Portfolio
+                  .col-md.col-xs-12
+                    a(class='no-under m-b-1-xs' href='/logos' title='Paul Portfolio') Logos
+                  .col-md.col-xs-12
+                    a(class='no-under m-b-1-xs email' title='Contact Paul by email') Email
+                  .col-md.col-xs-12
+                    a(class='no-under m-b-1-xs' href='https://www.linkedin.com/in/paulballas/' target='_blank' title='Contact Paul on LinkedIn') LinkedIn                   
+                  .col-md.col-xs-12
+                    a(class='no-under m-b-1-xs' href='https://github.com/paulballas' target='_blank' title='Contact Paul on GitHub') GitHub
     block scripts
       script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js')
       script(src='https://cdnjs.cloudflare.com/ajax/libs/zooming/1.4.1/zooming.min.js')

@@ -3,14 +3,14 @@ $ ->
 
   # modal
   modal = $('.modal')
-  $('nav .email').click ->
+  $('.email').click ->
     modal.fadeIn('fast')
     modal.addClass('modal-open')
   $('.modal .close-modal').click ->
     modal.fadeOut('fast')
 
   # email
-  $('.modal .form-submit').click ->    
+  $('.modal .form-submit').click ->
     $.ajax
       url: 'https://formspree.io/paul.ballas@gmail.com'
       type: 'POST'
