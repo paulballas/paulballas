@@ -1,7 +1,6 @@
 var express = require('express'),
     nodemailer = require('nodemailer'),
     projects = require('../data/data.json'),
-    comics = require('../data/comics.json'),
     router = express.Router();
 
 router.get('/', function(req, res, next) {
@@ -24,8 +23,8 @@ router.get('/portfolio/class', function(req, res, next) {
   res.render('class',{ title: 'Paul Ballas - ClassScout' });
 });
 
-router.get('/portfolio/illustrations', function(req, res, next) {
-  res.render('illustrations',{ title: 'Paul Ballas - Illustrations', comics });
+router.get('/logos', function(req, res, next) {
+  res.render('logos',{ title: 'Paul Ballas - Logs' });
 });
 
 router.get('/portfolio/marigold', function(req, res, next) {
