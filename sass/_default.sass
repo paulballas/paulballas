@@ -3,20 +3,18 @@
   display: none
 .emailme
   display: none
-.ccd2e7
-  background: #ccd2e7
 a
   &.lg
     font-size: ms(1)
   &.no-under
     text-decoration: none
   &.observable
-    border-bottom: 2px solid $a-pop
+    border-bottom: 2px solid $primary-pop
     &:hover
       padding: 2px
       margin: -2px
       border-bottom: none
-      background-color: $a-pop
+      background-color: $primary-pop
       color: $white
   &:hover
     cursor: pointer
@@ -26,6 +24,8 @@ a
 .pad-container
   padding-top: ms(6)
   padding-bottom: ms(6)
+.pad-container-top
+  padding-top: ms(6)
 .pad-container-lg
   padding-top: ms(8)
   padding-bottom: ms(8)
@@ -81,6 +81,16 @@ a
   +target(md)
     margin-top: 0
 
+.p-b-3-xs
+  padding-bottom: 0
+  +target(md)
+    padding-bottom: ms(4)
+
+.p-t-4-xs
+  padding-top: 0
+  +target(md)
+    padding-top: ms(3)
+
 .p-r-xs
   padding-right: 0
   +target(md)
@@ -135,22 +145,18 @@ svg
     max-width: ms(2)
     height: auto
 // backgrounds
-.a-pop-bg
-  background: $a-pop
-.b-pop-bg
-  background: $b-pop
-.c-pop-bg
-  background: $c-pop
-.d-pop-bg
-  background: $d-pop
-.e-pop-bg
-  background: $e-pop
+.primary-pop-bg
+  background: $primary-pop
+.primary-pop-bg
+  background: $secondary-pop
 .light-gray-bg
   background: $light-gray
 .mid-gray-bg
   background: $mid-gray
 .dark-gray-bg
   background: $dark-gray
+.white-bg
+  background: $white
 
 .m-x-auto
   margin-left: auto

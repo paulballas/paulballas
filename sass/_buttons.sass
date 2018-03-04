@@ -12,7 +12,7 @@
     line-height: ms(1)
     padding: ms(-3) ms(-1)
 
-@mixin btn-color($color: $a-pop, $outlined: false, $text-color: $white)
+@mixin btn-color($color: $primary-pop, $outlined: false, $text-color: $white)
   border: 2px solid $color
   @if $outlined
     color: $color
@@ -32,7 +32,7 @@
       background: darken($color, 5%)
       border: 2px solid darken($color, 5%)
 
-@mixin btn($color: $a-pop, $size: md, $outlined: false, $text-color: $white)
+@mixin btn($color: $primary-pop, $size: md, $outlined: false, $text-color: $white)
   @include btn-color($color, $outlined, $text-color)
   @include btn-size($size)
   display: block
@@ -53,26 +53,17 @@
 .btn-default
   +btn()
   &.btn-secondary
-    +btn-color($b-pop, false)
-  &.btn-tertiary
-    +btn-color($c-pop, false)
-  &.btn-quaternary
-    +btn-color($d-pop, false)
-  &.btn-quinary
-    +btn-color($e-pop, false)
+    +btn-color($secondary-pop, false)
+  &.btn-white
+    +btn-color($white, false)
 
 .btn-outlined
-  +btn($a-pop, md, true)
+  +btn($primary-pop, md, true)
   &.btn-secondary
-    +btn-color($b-pop, true)
-  &.btn-tertiary
-    +btn-color($c-pop, true)
-  &.btn-quaternary
-    +btn-color($d-pop, true)
-  &.btn-quinary
-    +btn-color($e-pop, true)
+    +btn-color($secondary-pop, true)
   &.btn-white
-    +btn-color($white, true)
+    +btn-color($white, false)
+
 
 .btn-small
   +btn-size(sm)

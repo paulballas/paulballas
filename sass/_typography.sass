@@ -62,7 +62,7 @@ h3
   +target(md)
     font-size: ms(3)
   &.h35
-    font-size: 1.5em    
+    font-size: 1.5em
 
 h4
   +font(700)
@@ -71,10 +71,18 @@ h4
   +target(md)
     font-size: ms(1)
 
-h5, h6
+h5
   +font(300)
   font-size: ms(0)
   line-height: ms(2)
+
+h6
+  +font(600)
+  font-size: 0.875em
+  line-height: ms(0)
+  margin-bottom: ms(-3)
+  text-transform: uppercase
+  color: $secondary !important
 
 p, li
   font-size: ms(1)
@@ -88,18 +96,14 @@ b
 
 .type-secondary
   color: $secondary
-.type-a-pop
-  color: $a-pop
-.type-b-pop
-  color: $b-pop
-.type-c-pop
-  color: $c-pop
-.type-d-pop
-  color: $d-pop
-.type-e-pop
-  color: $e-pop
+.type-primary-pop
+  color: $primary-pop
+.type-secondary-pop
+  color: $secondary-pop
 .type-white
   color: $white
+  *
+    color: $white
 
 .extra-small
   font-size: 0.875em
