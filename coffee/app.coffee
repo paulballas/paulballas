@@ -14,6 +14,7 @@ $ ->
     $.ajax
       url: 'https://formspree.io/paul.ballas@gmail.com'
       type: 'POST'
+      method: 'POST'
       dataType: 'json'
       data: $('#email_paul').serialize()
       success: (result) ->
