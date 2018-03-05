@@ -24,7 +24,7 @@ router.get('/portfolio/class', function(req, res, next) {
 });
 
 router.get('/logos', function(req, res, next) {
-  res.render('logos',{ title: 'Paul Ballas - Logs' });
+  res.render('logos',{ title: 'Paul Ballas - Logos' });
 });
 
 router.get('/portfolio/marigold', function(req, res, next) {
