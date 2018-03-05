@@ -13,7 +13,7 @@ $ ->
   $('.modal .form-submit').click (e) ->
     e.preventDefault()
     $.ajax
-      url: '//formspree.io/paul.ballas@gmail.com'
+      url: 'https://formspree.io/paul.ballas@gmail.com'
       method: 'POST'
       dataType: 'json'
       data: $('#email_paul').serialize()
