@@ -8,19 +8,3 @@ $ ->
     modal.addClass('modal-open')
   $('.modal .close-modal').click ->
     modal.fadeOut('fast')
-
-  # email
-  $('.modal .form-submit').click (e) ->
-    e.preventDefault()
-    $.ajax
-      url: 'https://formspree.io/paul.ballas@gmail.com'
-      method: 'POST'
-      dataType: 'json'
-      data: $('#email_paul').serialize()
-      success: (result) ->
-        $('.form-item').fadeOut('fast')
-        $('.on-success').fadeIn()
-        setTimeout (->
-          modal.fadeOut('fast')
-        ), 2000
-    return false
