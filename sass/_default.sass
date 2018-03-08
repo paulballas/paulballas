@@ -162,11 +162,6 @@ svg
   margin-left: auto
   margin-right: auto
 
-.hide-xs
-  display: none
-  +target(md)
-    display: block
-
 .slide-container
   position: relative
   padding-bottom: 50%
@@ -181,3 +176,23 @@ svg
     left:  0
     width: 100%
     height: 100%
+
+.hero-wrapper
+  z-index: 100
+  display: block
+  position: absolute
+  height: 70px
+  border-bottom: 799px solid $primary-pop
+  border-right: 1000px solid transparent
+  width: 0
+  top: 0
+  left: 0
+  opacity: 0.1
+
+.z-200
+  z-index: 200
+
+.hide-xs
+  display: none
+  +target(md)
+    display: block
